@@ -1,6 +1,6 @@
 :root {
   --body-bg-color: #eee;
-  --content-bg-color: #fff;
+  --content-bg-color: rgba(255,255,255,0.467);
   --card-bg-color: #f5f5f5;
   --text-color: #555;
   --blockquote-color: #666;
@@ -181,7 +181,11 @@ body {
   height: 100%;
 }
 body {
-  background: var(--body-bg-color);
+  background-image: url("https://tu.sunpma.com/imgs/2021/12/52977833579e0cad.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   box-sizing: border-box;
   color: var(--text-color);
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
