@@ -308,22 +308,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于本博客</title>
-    <url>/%E3%80%8Ctest%E3%80%8D/</url>
-    <content><![CDATA[<p>新博客终于完工啦~</p>
-<span id="more"></span>
-<p>感谢 Cloudysky 的大力帮助（主要由他搭建），也感谢 Baoshuo 的出手相助。</p>
-<p>后续会将一些重要的东西搬迁过来，其他的就在我的 <a href="https://www.cnblogs.com/acestar/">cnblogs</a> 上放着吧</p>
-<p>可惜域名被抢注了 QAQ，可能以后会自己买一个（？</p>
-]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>「学习笔记」斯特林数</title>
     <url>/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="第二类斯特林数"><a class="markdownIt-Anchor" href="#第二类斯特林数"></a> 第二类斯特林数</h2>
@@ -1772,6 +1756,22 @@ T^2\sum_{d|T}d\mu(\frac T d)=T^2\varphi(T)
       </categories>
       <tags>
         <tag>做题记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于本博客</title>
+    <url>/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>新博客终于完工啦~</p>
+<span id="more"></span>
+<p>感谢 Cloudysky 耗时几个小时搭建（当然是断断续续的，毕竟老师会来查水表的），也感谢 Baoshuo 的出手相助。</p>
+<p>后续会将一些重要的东西搬迁过来，其他的就在我的 <a href="https://www.cnblogs.com/acestar/">cnblogs</a> 上放着吧</p>
+<p>可惜域名被抢注了 QAQ，可能以后会自己买一个（？</p>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
