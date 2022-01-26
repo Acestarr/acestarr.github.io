@@ -166,6 +166,7 @@
     <title>noip2021 训练2(USACO)</title>
     <url>/noip2021%E8%AE%AD%E7%BB%832(USACO)/</url>
     <content><![CDATA[<p><a href="https://www.luogu.com.cn/training/119856#problems">Link</a></p>
+<span id="more"></span>
 <h2 id="usaco10mar-great-cow-gathering-g"><a class="markdownIt-Anchor" href="#usaco10mar-great-cow-gathering-g"></a> [USACO10MAR] Great Cow Gathering G</h2>
 <p>换根 dp 板子</p>
 <p>先用树形 dp 求出以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 为根的最小不方便值，然后 bfs 向儿子换根</p>
@@ -1154,7 +1155,7 @@ s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z'/></svg></span></span></sp
     <title>noip2021 训练5</title>
     <url>/noip2021%E8%AE%AD%E7%BB%835/</url>
     <content><![CDATA[<p><a href="https://vjudge.net/contest/468277">Link</a></p>
-<!--mode-->
+<span id="more"></span>
 <h2 id="sdoi2010-地精部落"><a class="markdownIt-Anchor" href="#sdoi2010-地精部落"></a> SDOI2010 地精部落</h2>
 <h3 id="法一"><a class="markdownIt-Anchor" href="#法一"></a> 法一：</h3>
 <p>首先有两个性质</p>
