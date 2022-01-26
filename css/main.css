@@ -1659,7 +1659,7 @@ pre code {
   font-weight: 600;
 }
 .site-state-item-name {
-  color: #999;
+  color: #5d5b5c;
   font-size: 0.8125em;
 }
 .footer {
@@ -2153,7 +2153,7 @@ pre code {
   transform: rotate(30deg);
 }
 .posts-expand .post-meta-container {
-  color: #999;
+  color: #5d5b5c;
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
