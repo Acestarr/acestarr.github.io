@@ -19,16 +19,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"acestarr.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="第二类斯特林数 第二类斯特林数 {nm}\begin{Bmatrix}n\\m\end{Bmatrix}{nm​} 表示把 nnn 个 不同 的元素划分成 mmm 个 相同 的集合中（不能有空集）的方案数。  第二类斯特林数·行  求 {n0},{n1},{n2},…,{nn}\begin{Bmatrix}n\\0\end{Bmatrix},\begin{Bmatrix}n\\1\end{Bma">
+<meta name="description" content="第二类斯特林数 第二类斯特林数 {nm}\begin{Bmatrix}n\\m\end{Bmatrix}{nm​} 表示把 nnn 个 不同 的元素划分成 mmm 个 相同 的集合中（不能有空集）的方案数。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Acestar&#39;s Blog">
+<meta property="og:title" content="「学习笔记」斯特林数">
 <meta property="og:url" content="https://acestarr.github.io/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Acestar&#39;s Blog">
-<meta property="og:description" content="第二类斯特林数 第二类斯特林数 {nm}\begin{Bmatrix}n\\m\end{Bmatrix}{nm​} 表示把 nnn 个 不同 的元素划分成 mmm 个 相同 的集合中（不能有空集）的方案数。  第二类斯特林数·行  求 {n0},{n1},{n2},…,{nn}\begin{Bmatrix}n\\0\end{Bmatrix},\begin{Bmatrix}n\\1\end{Bma">
+<meta property="og:description" content="第二类斯特林数 第二类斯特林数 {nm}\begin{Bmatrix}n\\m\end{Bmatrix}{nm​} 表示把 nnn 个 不同 的元素划分成 mmm 个 相同 的集合中（不能有空集）的方案数。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-25T03:39:44.132Z">
-<meta property="article:modified_time" content="2021-12-22T16:00:09.597Z">
+<meta property="article:published_time" content="2021-12-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-26T04:54:41.106Z">
 <meta property="article:author" content="Acestar">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 
 
@@ -36,10 +37,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"斯特林数 学习笔记/","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"斯特林数 学习笔记/","title":"「学习笔记」斯特林数"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | Acestar's Blog</title>
+<title>「学习笔记」斯特林数 | Acestar's Blog</title>
   
 
 
@@ -163,7 +164,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -174,7 +175,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -250,7 +251,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          「学习笔记」斯特林数
         </h1>
 
         <div class="post-meta-container">
@@ -261,14 +262,23 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2022-01-25 11:39:44" itemprop="dateCreated datePublished" datetime="2022-01-25T11:39:44+08:00">2022-01-25</time>
+      <time title="Created: 2021-12-23 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-23T00:00:00+08:00">2021-12-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-12-23 00:00:09" itemprop="dateModified" datetime="2021-12-23T00:00:09+08:00">2021-12-23</time>
+      <time title="Modified: 2022-01-26 12:54:41" itemprop="dateModified" datetime="2022-01-26T12:54:41+08:00">2022-01-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/OI/" itemprop="url" rel="index"><span itemprop="name">OI</span></a>
+        </span>
     </span>
 
   
@@ -283,6 +293,7 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="第二类斯特林数"><a class="markdownIt-Anchor" href="#第二类斯特林数"></a> 第二类斯特林数</h2>
 <p>第二类斯特林数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>m</mi></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow><annotation encoding="application/x-tex">\begin{Bmatrix}n\\m\end{Bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span></span></span></span> 表示把 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 个 <strong>不同</strong> 的元素划分成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 个 <strong>相同</strong> 的集合中（不能有空集）的方案数。</p>
+<span id="more"></span>
 <h3 id="第二类斯特林数行"><a class="markdownIt-Anchor" href="#第二类斯特林数行"></a> 第二类斯特林数·行</h3>
 <blockquote>
 <p>求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow><mo separator="true">,</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow><mo separator="true">,</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{Bmatrix}n\\0\end{Bmatrix},\begin{Bmatrix}n\\1\end{Bmatrix},\begin{Bmatrix}n\\2\end{Bmatrix},\dots,\begin{Bmatrix}n\\n\end{Bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span></span></span></span></p>
@@ -315,18 +326,21 @@ g(m)=\sum_{i=0}^m(-1)^{m-i}\binom m if(i) \\
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/" rel="prev" title="">
-                  <i class="fa fa-chevron-left"></i> 
+                <a href="/USACO%202021%20December%20Contest/" rel="prev" title="「赛后总结」USACO 2021 December Contest">
+                  <i class="fa fa-chevron-left"></i> 「赛后总结」USACO 2021 December Contest
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E3%80%8Ctest%E3%80%8D/" rel="next" title="「TEST」">
-                  「TEST」 <i class="fa fa-chevron-right"></i>
+                <a href="/2021-10-16%E9%AB%98%E4%BA%8CCSP%E6%A8%A1%E6%8B%9F%E8%B5%9B22%20%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/" rel="next" title="">
+                   <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

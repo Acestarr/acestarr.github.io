@@ -19,16 +19,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"acestarr.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="dsu on tree  简介 可以用来处理一些树上的问题，一般有2个特征：  询问子树上的信息。 没有修改。   思路 考虑暴力做法，对于每个子树，遍历一遍求答案，时间复杂度是 O(n2)O(n^2)O(n2) 的。 但是其实在求当前子树的答案时，它的信息父亲也是要用的，但是我们不能全继承上去，因为在遍历它的儿子求答案时，是相互独立的，需要清空。所以我们考虑怎么样能使优化最大化，显然是继承重儿">
+<meta name="description" content="dsu on tree  简介 可以用来处理一些树上的问题，一般有2个特征：  询问子树上的信息。 没有修改。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Acestar&#39;s Blog">
+<meta property="og:title" content="「学习笔记」dsu on tree">
 <meta property="og:url" content="https://acestarr.github.io/dsu%20on%20tree%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Acestar&#39;s Blog">
-<meta property="og:description" content="dsu on tree  简介 可以用来处理一些树上的问题，一般有2个特征：  询问子树上的信息。 没有修改。   思路 考虑暴力做法，对于每个子树，遍历一遍求答案，时间复杂度是 O(n2)O(n^2)O(n2) 的。 但是其实在求当前子树的答案时，它的信息父亲也是要用的，但是我们不能全继承上去，因为在遍历它的儿子求答案时，是相互独立的，需要清空。所以我们考虑怎么样能使优化最大化，显然是继承重儿">
+<meta property="og:description" content="dsu on tree  简介 可以用来处理一些树上的问题，一般有2个特征：  询问子树上的信息。 没有修改。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-25T03:39:44.091Z">
-<meta property="article:modified_time" content="2021-10-01T15:51:12.910Z">
+<meta property="article:published_time" content="2021-09-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-26T04:53:19.227Z">
 <meta property="article:author" content="Acestar">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 
 
@@ -36,10 +37,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/dsu%20on%20tree%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"dsu on tree学习笔记/","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/dsu%20on%20tree%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"dsu on tree学习笔记/","title":"「学习笔记」dsu on tree"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | Acestar's Blog</title>
+<title>「学习笔记」dsu on tree | Acestar's Blog</title>
   
 
 
@@ -163,7 +164,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -174,7 +175,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -250,7 +251,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          「学习笔记」dsu on tree
         </h1>
 
         <div class="post-meta-container">
@@ -261,14 +262,23 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2022-01-25 11:39:44" itemprop="dateCreated datePublished" datetime="2022-01-25T11:39:44+08:00">2022-01-25</time>
+      <time title="Created: 2021-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-01T00:00:00+08:00">2021-10-01</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-10-01 23:51:12" itemprop="dateModified" datetime="2021-10-01T23:51:12+08:00">2021-10-01</time>
+      <time title="Modified: 2022-01-26 12:53:19" itemprop="dateModified" datetime="2022-01-26T12:53:19+08:00">2022-01-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/OI/" itemprop="url" rel="index"><span itemprop="name">OI</span></a>
+        </span>
     </span>
 
   
@@ -288,6 +298,7 @@
 <li>询问子树上的信息。</li>
 <li>没有修改。</li>
 </ol>
+<span id="more"></span>
 <h2 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h2>
 <p>考虑暴力做法，对于每个子树，遍历一遍求答案，时间复杂度是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的。</p>
 <p>但是其实在求当前子树的答案时，它的信息父亲也是要用的，但是我们不能全继承上去，因为在遍历它的儿子求答案时，是相互独立的，需要清空。所以我们考虑怎么样能使优化最大化，显然是继承重儿子。</p>
@@ -317,18 +328,18 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/csp2021%E6%B8%B8%E8%AE%B0/" rel="prev" title="">
-                  <i class="fa fa-chevron-left"></i> 
-                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/exgcd/" rel="next" title="">
-                   <i class="fa fa-chevron-right"></i>
+                <a href="/noip2021%E8%AE%AD%E7%BB%832(CF)/" rel="next" title="noip2021 训练2(CF)">
+                  noip2021 训练2(CF) <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

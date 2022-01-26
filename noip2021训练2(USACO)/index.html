@@ -21,13 +21,13 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"acestarr.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="Link  [USACO10MAR] Great Cow Gathering G 换根 dp 板子 先用树形 dp 求出以 111 为根的最小不方便值，然后 bfs 向儿子换根 fv&#x3D;fu+(sizu−sizv×2)×wf_v&#x3D;f_u + (siz_u - siz_v \times 2) \times wfv​&#x3D;fu​+(sizu​−sizv​×2)×w 这个手推一下就好了，大概就是把两边子树中的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="noip2021 训练2">
+<meta property="og:title" content="noip2021 训练2(USACO)">
 <meta property="og:url" content="https://acestarr.github.io/noip2021%E8%AE%AD%E7%BB%832(USACO)/index.html">
 <meta property="og:site_name" content="Acestar&#39;s Blog">
 <meta property="og:description" content="Link  [USACO10MAR] Great Cow Gathering G 换根 dp 板子 先用树形 dp 求出以 111 为根的最小不方便值，然后 bfs 向儿子换根 fv&#x3D;fu+(sizu−sizv×2)×wf_v&#x3D;f_u + (siz_u - siz_v \times 2) \times wfv​&#x3D;fu​+(sizu​−sizv​×2)×w 这个手推一下就好了，大概就是把两边子树中的">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="1899-12-31T15:55:00.000Z">
-<meta property="article:modified_time" content="2022-01-25T13:45:31.008Z">
+<meta property="article:published_time" content="2021-11-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-26T04:46:11.088Z">
 <meta property="article:author" content="Acestar">
 <meta property="article:tag" content="做题记录">
 <meta name="twitter:card" content="summary">
@@ -37,10 +37,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/noip2021%E8%AE%AD%E7%BB%832(USACO)/","path":"noip2021训练2(USACO)/","title":"noip2021 训练2"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://acestarr.github.io/noip2021%E8%AE%AD%E7%BB%832(USACO)/","path":"noip2021训练2(USACO)/","title":"noip2021 训练2(USACO)"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>noip2021 训练2 | Acestar's Blog</title>
+<title>noip2021 训练2(USACO) | Acestar's Blog</title>
   
 
 
@@ -164,7 +164,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -175,7 +175,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -251,7 +251,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          noip2021 训练2
+          noip2021 训练2(USACO)
         </h1>
 
         <div class="post-meta-container">
@@ -262,14 +262,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 1900-01-01 00:00:43" itemprop="dateCreated datePublished" datetime="1900-01-01T00:00:43+08:05">1900-01-01</time>
+      <time title="Created: 2021-11-07 00:00:00" itemprop="dateCreated datePublished" datetime="2021-11-07T00:00:00+08:00">2021-11-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-01-25 21:45:31" itemprop="dateModified" datetime="2022-01-25T21:45:31+08:00">2022-01-25</time>
+      <time title="Modified: 2022-01-26 12:46:11" itemprop="dateModified" datetime="2022-01-26T12:46:11+08:00">2022-01-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -440,10 +440,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/noip2021%E8%AE%AD%E7%BB%831(CF&USACO)/" rel="prev" title="noip2021 训练1">
+                  <i class="fa fa-chevron-left"></i> noip2021 训练1
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021-10-16%E9%AB%98%E4%BA%8CCSP%E6%A8%A1%E6%8B%9F%E8%B5%9B22%20%E8%B5%9B%E5%90%8E%E6%80%BB%E7%BB%93/" rel="next" title="">
-                   <i class="fa fa-chevron-right"></i>
+                <a href="/noip2021%E8%AE%AD%E7%BB%834/" rel="next" title="noip2021 训练4">
+                  noip2021 训练4 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
