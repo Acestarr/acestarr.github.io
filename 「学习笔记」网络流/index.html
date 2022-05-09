@@ -19,15 +19,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"acestarr.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="最大流 只会 dinic，每次找增广路 优化：多路增广、当前弧优化  Code 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384">
+<meta name="description" content="网络流大杂烩">
 <meta property="og:type" content="article">
 <meta property="og:title" content="「学习笔记」网络流">
 <meta property="og:url" content="https://acestarr.github.io/%E3%80%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8D%E7%BD%91%E7%BB%9C%E6%B5%81/index.html">
 <meta property="og:site_name" content="Acestar&#39;s Blog">
-<meta property="og:description" content="最大流 只会 dinic，每次找增广路 优化：多路增广、当前弧优化  Code 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384">
+<meta property="og:description" content="网络流大杂烩">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-22T11:28:53.382Z">
+<meta property="article:modified_time" content="2022-05-02T15:19:09.306Z">
 <meta property="article:author" content="Acestar">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -272,7 +272,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-04-22 19:28:53" itemprop="dateModified" datetime="2022-04-22T19:28:53+08:00">2022-04-22</time>
+      <time title="Modified: 2022-05-02 23:19:09" itemprop="dateModified" datetime="2022-05-02T23:19:09+08:00">2022-05-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -294,8 +294,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="最大流"><a class="markdownIt-Anchor" href="#最大流"></a> 最大流</h2>
-<p>只会 dinic，每次找增广路</p>
+        <p>网络流大杂烩</p>
+<span id="more"></span>
+<h2 id="最大流"><a class="markdownIt-Anchor" href="#最大流"></a> 最大流</h2>
+<p>dinic，每次找增广路</p>
 <p>优化：多路增广、当前弧优化</p>
 <details>
 <summary>Code</summary>
